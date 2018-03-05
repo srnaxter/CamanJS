@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+    <title>Caman JS</title>
+    <script>
+        Caman('#caman-image', function () {
+            this.brightness(5);
+            this.contrast(30);
+            this.sepia(20);
+            this.saturation(90);
+            this.render();
+        });
+    </script>
+</head>
+<body>
+<div>
+<h1>Antes</h1>
+<img src="photo.jpg">
+</div>
+<div id="derecha">
+<h1>Despues</h1>
+<img id="caman-image" src="photo.jpg">
+</div>
+
+</body>
+</html>
